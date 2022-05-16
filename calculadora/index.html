@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <style>
+    body {
+      font-size: 20px;
+    }
+
+    input {
+      width: 50px;
+      height: 30px;
+    }
+
+    #button {
+      width: 60px;
+      height: 35px;
+      color: rgb(71, 5, 133);
+      background-color: rgb(183, 183, 232);
+    
+    }
+  </style>
+</head>
+<body>
+  <h1>Somando Números</h1>
+  <input type="number" name="n1" id="n1"> +
+  <input type="number" name="n2" id="n2">
+  <input type="button" value="soma" onclick="somar()" id="button"><br><br>
+  <div id="resultado">Resultado</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
