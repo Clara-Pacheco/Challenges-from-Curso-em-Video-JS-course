@@ -4,33 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Verificador de Idade</title>
+  <title>Tabuada</title>
 </head>
 <body>
   <header>
-    <h1>Verificador de Idade</h1>
+    <h1>Tabuada</h1>
   </header>
-  <section id="form">
+  <section>
     <div>
-      <label for="caixa-ano">Ano de Nascimento: </label>
-      <input type="number" name="ano-de-nascimento" id="caixa-ano" min="0">
-      
-      <p>Sexo:
 
-      <label for="masc">Masculino</label>
-      <input type="radio" name="genero" id="masc" checked>
-
-      <label for="fem">Feminino</label>
-      <input type="radio" name="genero" id="fem">
-
-    </p>
-
-    <p>
-      <input id="button"  type="button" value="verificar" onclick="verificar()">
-    </p>
+      <label for="txtnumber">Número: </label>
+      <input type="number" name="txtnumber" id="txtnumber">
+      <input type="button" value="Gerar Tabuada" onclick="gerarTabuada()">
+     
     </div>
     <div id="resultado">
-      Preencha os dados acima para ver o resultado
+      <select name="tabuada" id="selTabuada" size="10">
+        <option>Digite um número acima...</option>
+      </select>
     </div>
   </section>
   <footer>
